@@ -1,0 +1,165 @@
+/*=================================================================================*/
+/*=================================================================================*/
+/*=================================================================================*/
+/*==========================||---------------------------||========================*/
+/*==========================|| Developed By Hossam Hilal ||========================*/
+/*==========================||---------------------------||========================*/
+/*====================================||------||===================================*/
+/*====================================|| 2020 ||===================================*/
+/*====================================||------||===================================*/
+/*=================================================================================*/
+/*=================================================================================*/
+
+body {
+    direction: ltr;
+}
+
+.basic-title ,
+.work-step .data p ,
+.contact-box-block ,
+.footer ,
+.about-us-content ,
+.Why-us-block ,
+.celebrity-offer .celebrity-offer-content ,
+.writing-offer
+{
+    text-align: left;
+}
+
+.call {
+    padding: 1px 1px 2px 7px;
+    margin-right: 0;
+    margin-left: 22px;
+}
+
+.call::after {
+    left: auto;
+    right: 2px;
+}
+
+.call icon {
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+.social a {
+    margin-left: 0;
+    margin-right: 8px;
+}
+
+.header-nav a {
+    margin-left: 0;
+    margin-right: 30px;
+}
+
+.contact-box li img {
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+.followUS .social a {
+    margin-left: 0;
+    margin-right: 36px;
+}
+
+@media (min-width:1024px) {
+    .contact .row .col-12:nth-child(1) {
+        padding: 0 7px 0 0;
+    }
+
+    .contact .row .col-12:nth-child(2) {
+        padding: 0 0 0 7px;
+    }
+}
+
+.subscribe-box button img {
+    transform: rotate(180deg);
+}
+
+.footer-info li img {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.contact-form .social {
+    left: auto;
+    right: 0;
+}
+
+.header-circle-center {right: -90px;left: auto;}
+
+.Why-us-block {
+    border-right: 0;
+    border-left: 3px solid var(--darkBlue);
+    border-top-left-radius: 11px;
+}
+
+.social-tech-wrapper {
+    background: url('../images/social-tech-en.png') no-repeat;
+    background-size: contain;
+}
+
+.celebrity-offer {
+    direction: rtl;
+}
+
+.celebrity-offer .basic-title::after {
+    left: 0;
+}
+
+.plan-steps .col-12:first-of-type .plan-step {
+    border-left: 1px solid var(--text);
+}
+
+.plan-step {
+    border-right: 1px solid var(--text);
+    border-left: 0;
+    padding: 25px 15px 25px 25px;
+    text-align: left;
+}
+
+.plan-step::before {
+    border-right: 0;
+    border-left: 10px solid var(--darkBlue);
+    right: auto;
+    left: -3px;
+}
+
+.plan-step::after {
+    right: auto;
+    left: 0;
+    border-right: 0;
+    border-left: 15px solid var(--white);
+}
+
+
+@media (min-width: 992px) {
+    .motion-offers .col-12:nth-child(2) {
+        margin-right: 0;
+        margin-left: -33px;
+    }
+
+    .motion-offers .col-12:nth-child(1) {
+        margin-right: auto;
+        margin-left: -55px;
+    }
+}
+
+.request-info img {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.service-box .data p {
+    text-align: left;
+}
+
+.service-box .data p::before {
+    right: auto;
+    left: 0;
+}
+
+.about-services-content {
+    margin-left: auto;
+    text-align: left;
+}
