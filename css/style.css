@@ -522,6 +522,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    bottom: 43px;
+    width: 100%;
+    left: 0;
 }
 
 .scroll-down-btn {
@@ -752,7 +756,7 @@ header {
 }
 
 .wok-strategy {
-    padding: 70px 0 140px;
+    padding: 70px 0 70px;
     position: relative;
 }
 
@@ -763,7 +767,7 @@ header {
 
 
 .wok-strategy .vector img {
-    width: 700px;
+    width: 500px;
     max-width: 100%;
 }
 
@@ -781,11 +785,10 @@ header {
 
 .wok-steps {
     text-align: right;
-    margin-bottom: 30px;
 }
 
 .wok-steps h1 {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 .basic-title {
@@ -813,8 +816,8 @@ header {
 }
 
 .work-step .icon {
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
     box-shadow: var(--shadow);
     background: var(--gridentBg2);
     border-radius: 50%;
@@ -828,8 +831,8 @@ header {
 
 .work-step .data {
     background: var(--white);
-    margin-top: calc(-110px / 2);
-    padding: 75px 15px 20px;
+    margin-top: calc(-100px / 2);
+    padding: 70px 15px 20px;
     box-shadow: var(--shadow);
     border-radius: 16px;
 }
@@ -886,11 +889,11 @@ header {
 
 
 .services {
-    padding: 120px 0;
+    padding: 70px 0;
 }
 
 .services .vector {
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 .services-box {
@@ -906,8 +909,8 @@ header {
     -webkit-shape-outside: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
     clip-path: polygon(50% 0, 100% 20%, 100% 80%, 50% 100%, 0 80%, 0 20%);
     background: var(--white);
-    height: 228px;
-    width: 203px;
+    height: 190px;
+    width: 170px;
     transform: rotate(90deg);
     box-shadow: var(--shadow);
     cursor: pointer;
@@ -940,28 +943,28 @@ header {
 }
 
 .service:nth-child(2) {
-    margin-top: 103px;
-    margin-right: -10px;
+    margin-top: 84px;
+    margin-right: -13px;
 }
 
 .service:nth-child(3) {
-    margin-right: -10px;
+    margin-right: -14px;
 }
 
 .service:nth-child(4) {
     clear: both;
-    margin-top: -119px;
-    margin-right: 2px;
+    margin-top: -101px;
+    margin-right: 3px;
 }
 
 .service:nth-child(5) {
-    margin-top: -15px;
-    margin-right: -13px;
+    margin-top: -16px;
+    margin-right: -14px;
 }
 
 .service:nth-child(6) {
-    margin-top: -120px;
-    margin-right: -11px;
+    margin-top: -102px;
+    margin-right: -16px;
 }
 
 .service img {
@@ -971,7 +974,7 @@ header {
 }
 
 .service h4 {
-    font: Bold 17px/30px var(--fontBold);
+    font: Bold 14px/30px var(--fontBold);
     color: var(--darkBlue);
 }
 
@@ -1074,10 +1077,17 @@ header {
 }
 
 
+@media (min-width:1024px) {
+    .services-box {
+        width: 510px;
+        margin: auto;
+    }
+}
+
 .products {
-    padding: 130px 0;
+    padding: 70px 0;
     text-align: center;
-    box-shadow: var(sectionShadow);
+    box-shadow: var(--sectionShadow);
 }
 
 .products .basic-title {
@@ -1093,7 +1103,7 @@ header {
 }
 
 .products-filter-list {
-    padding: 90px 0 60px 0;
+    padding: 50px 0 50px 0;
 }
 
 .products-filter-list ul {
@@ -1119,26 +1129,6 @@ header {
     background: var(--white);
     color: var(--darkBlue);
 }
-
-/* .products-filter-list li:nth-child(2) a {
-    background: url('../images/filter-2.png') no-repeat;
-    background-size: cover;
-}
-
-.products-filter-list li:nth-child(3) a {
-    background: url('../images/filter-3.png') no-repeat;
-    background-size: cover;
-}
-
-.products-filter-list li:nth-child(4) a {
-    background: url('../images/filter-4.png') no-repeat;
-    background-size: cover;
-}
-
-.products-filter-list li:nth-child(5) a {
-    background: url('../images/filter-5.png') no-repeat;
-    background-size: cover;
-} */
 
 .products-filter-content .col-12 {
     padding: 7px;
@@ -1226,12 +1216,19 @@ header {
     }
 }
 
+@media (min-width:1024px) {
+    .products-filter-content {
+        width: 900px;
+        margin: auto;
+    }
+}
+
 .team {
-    padding: 100px 0;
+    padding: 70px 0;
 }
 
 .team .basic-title {
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 
 .team-wrapper {
@@ -1356,7 +1353,7 @@ header {
 
 
 .sponsors {
-    padding: 140px 0;
+    padding: 60px 0;
 }
 
 .sponsors .item {
@@ -1431,11 +1428,11 @@ header {
 
 
 .blogs {
-    padding: 150px 0;
+    padding: 70px 0;
 }
 
 .blogs .basic-title {
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 
 .blog {
@@ -1527,8 +1524,8 @@ header {
 
 .contact {
     background: url('../images/contactBg.png') no-repeat;
-    background-size: cover;
-    padding: 100px 0;
+    background-size: 100% 100%;
+    padding: 60px 0;
 }
 
 .contact .basic-title {
@@ -1641,15 +1638,15 @@ header {
 
 @media (min-width:1024px) {
     .contact .row {
-        width: 900px;
+        width: 800px;
         max-width: 100%;
         margin: auto;
     }
 
     .contact .basic-title {
-        width: 900px;
+        width: 800px;
         max-width: 100%;
-        margin: 0 auto 100px;
+        margin: 0 auto 60px;
     }
 
     .contact .row .col-12:nth-child(1){
@@ -1662,7 +1659,7 @@ header {
 }
 
 .newsletter {
-    padding: 50px 0 130px;
+    padding: 50px 0;
 }
 
 .newsletter .basic-title {
@@ -1973,7 +1970,7 @@ header {
 }
 
 .internal-header-box h1 {
-    font: Bold 34px/72px var(--fontBold);
+    font: Bold 30px/72px var(--fontBold);
     color: var(--darkBlue);
     text-align: center;
     position: relative;
@@ -1983,18 +1980,18 @@ header {
 
 .header-circle-center {
     position: absolute;
-    top: calc(50% - 90px);
-    left: -90px;
-    width: 180px;
-    height: 180px;
+    top: calc(50% - 70px);
+    left: -70px;
+    width: 140px;
+    height: 140px;
 }
 
 .header-circle-left {
     position: absolute;
     bottom: 45px;
-    left: 110px;
-    width: 110px;
-    height: 110px;
+    left: 100px;
+    width: 100px;
+    height: 100px;
 }
 
 .header-circle-right {
@@ -2022,7 +2019,7 @@ header {
 }
 
 .about-us {
-    padding: 65px 0;
+    padding: 55px 0;
     text-align: right;
 }
 
@@ -2043,12 +2040,17 @@ header {
     justify-content: center;
 }
 
+.about-us-vector img {
+    width: 400px;
+    margin: auto;
+}
+
 .Why-us {
     padding: 50px 0;
 }
 
 .Why-us .basic-title {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 .Why-us-block {
@@ -2060,13 +2062,13 @@ header {
 }
 
 .Why-us-block h4 {
-    font: Bold 22px/36px var(--fontBold);
+    font: Bold 19px/30px var(--fontBold);
     color: var(--darkBlue);
     margin: 0;
 }
 
 .why-us-qoute {
-    margin: 190px auto 100px;
+    margin: 130px auto 80px;
     width: 580px;
     max-width: 100%;
     background: var(--white);
@@ -2078,7 +2080,7 @@ header {
 }
 
 .why-us-qoute h3 {
-    font: Bold 25px/54px var(--fontBold);
+    font: Bold 20px/54px var(--fontBold);
     color: var(--darkBlue);
     margin: 0;
 }
@@ -2101,22 +2103,22 @@ header {
     background: var(--reverseGrident);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    left: calc(50% - 50px/2);
-    font-size: 55px;
+    left: calc(50% - 34px/2);
+    font-size: 35px;
 }
 
 .why-us-qoute::before {
     content: "\efce";
-    top: -85px;
+    top: -60px;
 }
 
 .why-us-qoute::after {
     content: "\efcd";
-    bottom: -85px;
+    bottom: -60px;
 }
 
 .about-features {
-    padding: 100px 0;
+    padding: 60px 0 30px;
     text-align: center;
 }
 
@@ -2271,7 +2273,7 @@ header {
 }
 
 .services-wrapper {
-    padding: 90px 0;
+    padding: 60px 0;
 }
 
 .services-wrapper .col-12 {
@@ -2284,8 +2286,8 @@ header {
 }
 
 .service-box .icon {
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
     box-shadow: var(--shadow);
     background: var(--serviceboxGrident);
     border-radius: 50%;
@@ -2299,8 +2301,8 @@ header {
 
 .service-box .data {
     background: var(--white);
-    margin-top: calc(-110px / 2);
-    padding: 75px 15px 30px;
+    margin-top: calc(-100px / 2);
+    padding: 70px 15px 30px;
     box-shadow: var(--shadow);
     border-radius: 16px;
     min-height: 225px;
@@ -2502,7 +2504,7 @@ header {
 /*==========================||---------------------------||========================*/
 
 .page-description {
-    padding: 0 0 50px;
+    padding: 0 0 40px;
     position: relative;
     text-align: center;
 }
@@ -2554,7 +2556,7 @@ header {
 
 
 .work-tech {
-    padding: 100px 0;
+    padding: 60px 0;
     text-align: center;
 }
 
@@ -2569,7 +2571,7 @@ header {
 .work-tech-box {
     background-size: inherit;
     min-height: 242px;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2632,7 +2634,7 @@ header {
 /*==========================||---------------------------||========================*/
 
 .plan-steps {
-    padding: 60px 0;
+    padding: 50px 0 20px;
 }
 
 .plan-steps .row {
@@ -2745,7 +2747,7 @@ header {
 
 
 .examples {
-    padding: 100px 0;
+    padding: 60px 0;
 }
 
 .examples p {
@@ -2767,19 +2769,19 @@ header {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    height: 163px;
+    height: 130px;
 }
 
 .example h3 {
-    font: Bold 22px/30px var(--fontBold);
+    font: Bold 19px/30px var(--fontBold);
     color: var(--darkBlue);
     position: relative;
 }
 
 .example img {
-    max-width: 95px;
-    max-height: 95px;
-    margin-bottom: 30px;
+    max-width: 70px;
+    max-height: 70px;
+    margin-bottom: 20px;
 }
 
 .example h3::after {
@@ -2790,14 +2792,14 @@ header {
     position: absolute;
     top: 100%;
     height: 3px;
-    width: 50px;
-    left: calc(50% - 25px);
+    width: 30px;
+    left: calc(50% - 15px);
     margin-top: 4px;
     border-radius: 5px;
 }
 
 .examples .Btn-grident {
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 
@@ -2845,17 +2847,17 @@ header {
 /*==========================||---------------------------||========================*/
 
 .page-description.page-social img {
-    margin-top: -286px;
-    width: 510px;
+    margin-top: -270px;
+    width: 440px;
     max-width: 100%;
 }
 
 .social-tech {
-    padding: 90px 0;
+    padding: 60px 0 10px;
 }
 
 .social-tech .basic-title {
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 
 .social-tech-wrapper {
@@ -2870,7 +2872,7 @@ header {
 }
 
 .social-tech-box h3 {
-    font: normal 20px/36px var(--fontNormal);
+    font: normal 19px/36px var(--fontNormal);
     color: var(--darkBlue);
 }
 
@@ -2958,7 +2960,7 @@ header {
 
 
 .social-strategy {
-    padding: 80px 0;
+    padding: 60px 0;
     text-align: center;
 }
 
@@ -2979,7 +2981,7 @@ header {
 }
 
 .social-strategy .Btn-grident {
-    margin-top: 70px;
+    margin-top: 30px;
 }
 
 
@@ -3058,12 +3060,12 @@ header {
 .advertisment-channels p {
     font: normal 22px/26px var(--fontNormal);
     color: var(--text);
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 .advertisment-channels .row {
     width: 100%;
-    max-width: 730px;
+    max-width: 500px;
     margin: auto;
     justify-content: center;
 }
@@ -3073,8 +3075,8 @@ header {
 }
 
 .channel a {
-    height: 130px;
-    width: 130px;
+    height: 90px;
+    width: 90px;
     display: block;
     margin: auto;
     border-radius: 50%;
@@ -3085,7 +3087,7 @@ header {
 }
 
 .advertisment-channels .Btn-grident {
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .advertisment-channels .Btn-grident:hover {
@@ -3107,7 +3109,7 @@ header {
 
 .writing-provides ,
 .writing-offers {
-    padding: 60px 0;
+    padding: 50px 0;
 }
 
 .writing-offers .basic-title {
@@ -3199,8 +3201,8 @@ header {
 }
 
 .writing-provide-icon {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     box-shadow: var(--shadow);
     background: var(--serviceboxGrident);
     border-radius: 50%;
@@ -3214,8 +3216,8 @@ header {
 
 .writing-provide-content {
     background: var(--white);
-    margin-top: -45px;
-    padding: 55px 15px 20px;
+    margin-top: -40px;
+    padding: 50px 15px 20px;
     box-shadow: var(--shadow);
     border-radius: 16px;
     min-height: 170px;
@@ -3228,7 +3230,7 @@ header {
 }
 
 .writing-provides .Btn-grident {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 @media screen and  (max-width:575px) {
@@ -3249,7 +3251,8 @@ header {
 
 .motion-provides .basic-title {
     text-align: center;
-    margin-bottom: 75px;
+    margin-bottom: 60px;
+    margin-top: -40px;
 }
 
 .motion-provides .basic-title::after {
@@ -3261,7 +3264,7 @@ header {
     font: normal 19px/32px var(--fontNormal);
     width: 100%;
     max-width: 1000px;
-    margin: 0 auto 70px;
+    margin: 0 auto 45px;
     color: var(--text);
 }
 
@@ -3293,7 +3296,7 @@ header {
 }
 
 .motion-provide-content h3 {
-    font: Bold  19px/35px var(--fontBold);
+    font: Bold  18px/35px var(--fontBold);
     color: var(--darkBlue);
     margin-bottom: 5px;
 }
@@ -3305,7 +3308,7 @@ header {
 
 .motion-provides h4 {
     font: normal 20px/26px var(--fontNormal);
-    margin: 80px auto;
+    margin: 30px auto;
     width: 100%;
     max-width: 1000px;
     color: var(--text);
@@ -3316,14 +3319,14 @@ header {
 }
 
 .motion-offers {
-    padding: 70px 0 130px;
+    padding: 60px 0;
     text-align: center;
 }
 
 .motion-offers .basic-title {
     text-align: center;
     color: var(--white);
-    margin-bottom: 75px;
+    margin-bottom: 55px;
 }
 
 .motion-offers .basic-title::after,
@@ -3516,7 +3519,7 @@ header {
 }
 
 .creative-design-steps {
-    padding: 70px 0;
+    padding: 60px 0;
 }
 
 .creative-design-steps .basic-title {
@@ -3539,8 +3542,8 @@ header {
 }
 
 .creative-design-step {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -3550,7 +3553,8 @@ header {
 
 .creative-design-step h3 {
     color: var(--white);
-    font: Bold 30px/80px var(--fontBold);
+    font: Bold 18px/80px var(--fontBold);
+    margin: 0;
 }
 
 .creative-design-step:hover {
@@ -3574,7 +3578,7 @@ header {
 
 @media (min-width:1024px) {
     .creative-design-steps .row {
-        width:900px;
+        width: 700px;
         margin: auto;
     }
 }
@@ -3584,7 +3588,7 @@ header {
     font-family: var(--fontNormal);
     width: 100%;
     max-width: 900px;
-    margin: 60px auto 80px;
+    margin: 40px auto;
 }
 
 .creative-design-provides .writing-provide-icon {
@@ -3620,16 +3624,16 @@ header {
 }
 
 .work-shop img {
-    width: 150px;
+    width: 90px;
 }
 .work-shop h3 {
-    font: Bold 25px/60px var(--fontBold);
+    font: Bold 19px/60px var(--fontBold);
     color: var(--white);
     margin-top: 20px;
 }
 
 .work-shops .Btn-grident {
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 @media screen and (max-width:768px) {
@@ -3690,8 +3694,8 @@ header {
 }
 
 .seo-offer .icon {
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
     box-shadow: var(--shadow);
     background: var(--serviceboxGrident);
     border-radius: 50%;
@@ -3705,24 +3709,24 @@ header {
 
 .seo-offer .data {
     background: var(--white);
-    margin-top: calc(-110px / 2);
-    padding: 75px 15px 20px;
+    margin-top: calc(-100px / 2);
+    padding: 70px 15px 20px;
     box-shadow: var(--shadow);
     border-radius: 16px;
-    min-height: 210px;
+    min-height: 195px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .seo-offer .data h3 {
-    font: Bold 20px/36px var(--fontBold);
+    font: Bold 18px/36px var(--fontBold);
     color: var(--darkBlue);
     margin-bottom: 0;
 }
 
 .seo-offers .Btn-grident {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .seo-offers .Btn-grident:hover {
@@ -3737,7 +3741,8 @@ header {
 
 .page-web .basic-title {
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
+    font-size: 25px;
 }
 
 .page-web .basic-title::after {
@@ -3747,12 +3752,12 @@ header {
 
 .web-techs {
     text-align: center;
-    padding: 70px 0;
+    padding: 60px 0;
 }
 
 .web-techs .basic-title {
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
 }
 
 .web-techs .basic-title::after {
@@ -3863,7 +3868,7 @@ header {
 
 
 .web-techs .Btn-grident {
-    margin-top: 80px;
+    margin-top: 55px;
 }
 
 .wow {
