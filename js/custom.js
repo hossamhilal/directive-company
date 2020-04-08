@@ -67,6 +67,21 @@ $(document).ready(function ($) {
         }, 800, 'linear');
     });
 
+    // MIX IT UP FILTER
+    var mixer = mixitup('.products-filter-content', {
+        selectors: {
+            target: '.col-12'
+        },
+        animation: {
+            duration: 400
+        }
+    });
+
+    $('.products-filter-list a').click(function(e){
+        e.preventDefault();
+        $('.products-filter-list a').removeClass('active');
+        $(this).addClass('active');
+    });
 
     // INPUT FOCUS ANIMATION 
     $('.field .form-control').focus(function(){
@@ -92,21 +107,6 @@ $(document).ready(function ($) {
     }, function(){
         $('.service:nth-child(1)').addClass('first');
     });
-
-    // MIX IT UP FILTER 
-    $('.products-filter-list a').click(function(e){
-        e.preventDefault();
-    });
-
-    var mixer = mixitup('.products-filter-content', {
-        selectors: {
-            target: '.col-12'
-        },
-        animation: {
-            duration: 400
-        }
-    });
-
 
     // Team Owl
     $('.team-owl').owlCarousel({

@@ -708,7 +708,7 @@ header {
     .language-choosed {
         height: 20px;
         width: 20px;
-        line-height: 20px;
+        font-size: 10px;
     }
 
     .slider-text h1 {
@@ -1206,13 +1206,22 @@ header {
     }
 
     .products-filter-list {
-        padding: 40px 0;
+        padding: 40px 0 0;
+    }
+
+    .products-filter-list ul {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: scroll;
     }
 
     .products-filter-list a {
-        padding: 5px 13px;
-        font-size: 13px;
-        margin: 0 0 5px 10px;
+        padding: 0px 10px;
+        font-size: 10px;
+        line-height: 24px;
+        margin: 0 0 4px 5px;
+        width: max-content;
+        display: block;
     }
 }
 
@@ -1338,8 +1347,8 @@ header {
 
     .team-owl .active.center .item {
         margin: auto;
-        width: 100%;
-        height: 100%;
+        width: 130px;
+        height: 130px;
     }
 
     .team .basic-title {
@@ -1397,19 +1406,18 @@ header {
 
 @media screen and (max-width:767px) {
     .sponsors {
-        padding: 70px 0;
+        padding: 30px 0;
     }
 
     .sponsors-owl .owl-nav {
         justify-content: space-around;
-        margin-top: 30px;
+    }
+    
+    .sponsors-owl .owl-prev {
+        right: 0;
     }
 
-    .sponsors-owl .owl-next,
-    .sponsors-owl .owl-prev {
-        top: 100%;
-        position: relative;
-        right: auto;
+    .sponsors-owl .owl-next {
         left: 0;
     }
 }
@@ -1920,6 +1928,7 @@ header {
 
 .copyright img {
     height: 21px;
+    margin: 0 8px;
 }
 
 .copyright p {
@@ -2166,8 +2175,14 @@ header {
 
 
 @media screen and (max-width:768px) {
+    .internal-header .header-nav a {
+        color: var(--white);
+    }
+
     .internal-header-box {
-        height: calc(100vh - 50px);
+        height: calc(100vh - 80px);
+        margin-top: 40px;
+        overflow: hidden;
     }
 
     .internal-header-box h1 {
@@ -3530,6 +3545,10 @@ header {
 
 .creative-design-steps .basic-title::after {
     left: calc(50% - 30px);
+}
+
+.creative-design-steps p {
+    color: var(--white);
 }
 
 .creative-design-steps .basic-content {
